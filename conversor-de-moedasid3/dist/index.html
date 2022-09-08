@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de moedas - ID3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Selecione as moedas
+    </p>
+    <div>
+      <label for="moedaParaConverter">De: </label>
+      <select name="moedaParaConverter" id="moedaParaConverter">
+        <option value="real">Real</option>
+        <option value="dolar">Dolar</option>
+        <option value="euro">Euro</option>
+        <option value="iene">Iene</option>
+        <option value="bitcoin">Bitcoin</option>
+      </select>
+      <label for="moedaConvertida">Para: </label>
+      <select name="moedaConvertida" id="moedaConvertida">
+        <option value="real">Real</option>
+        <option value="dolar">Dolar</option>
+        <option value="euro">Euro</option>
+        <option value="bitcoin">Bitcoin</option>
+      </select>
+    </div>
+
+    <br>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+      class="page-logo" alt=""><br><br>
+    <label>Insira o valor</label><br>
+    <input type="number" id="valor" size="2" /><br>
+    <button type="submit" onclick="Converter()">Converter</button>
+    <h2 id="valorConvertido"></h2>
+
+    <!-- QUILOMETROS -->
+
+    <h1 class="page-title">
+      Conversor Anos Luz em KM
+    </h1>
+    <label for="moeda">Insira o valor</label><br>
+    <input type="number" id="valorKm" size="2" /><br>
+    <button type="submit" onclick="ConverterKm()">Converter</button>
+    <h2 id="valorKmConvertido"></h2>
+
+    <!-- TEMPERATURAS -->
+
+    <h1 class="page-title">
+      Conversor de Temperaturas
+    </h1>
+    <label>Insira o valor em ºC</label><br>
+    <input type="number" id="valorCelsius" size="2" /><br>
+    <button type="submit" onclick="ConverterTemperaturas()">Converter</button>
+    <div>
+      <h3>Farenheit: <span id="farenheit"></span></h3>
+      <h3>Kelvin: <span id="kelvin"></span></h3>
+    </div>
+
+
+  </div>
+
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <!-- partial -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
